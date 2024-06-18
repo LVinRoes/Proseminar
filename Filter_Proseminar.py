@@ -60,7 +60,7 @@ def apply_edge_decection(image):
     return filtered_image
 
 
-image_path = 'C:\\Users\\roesl\\Programming\\Proseminar\\Elefant.jpg'  
+image_path = ''  
 input_image = cv2.imread(image_path)
 
 # Apply low-pass filter
@@ -71,11 +71,11 @@ HPF_filtered_image= apply_high_pass_filter(input_image)
 edge_detedt_image = apply_edge_decection(input_image)
 
 # Display original and filtered images
-cv2.imshow('Original Image', input_image)
+#cv2.imshow('Original Image', input_image)
 #cv2.imshow('Filtered Image Low Pass', LPF_filtered_image)
 #cv2.imshow('Filtered Image Low Pass 5x5', LPF_filtered_image_5x5)
 #cv2.imshow('Filtered Image High Pass', HPF_filtered_image)
-cv2.imshow('Filtered Image edge_detection', edge_detedt_image)
+#cv2.imshow('Filtered Image edge_detection', edge_detedt_image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
 
