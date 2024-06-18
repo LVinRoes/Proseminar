@@ -25,8 +25,8 @@ def match_template(image, template):
     return matched_image, max_val, top_left, bottom_right
 
 # Load the large image and the template image
-image_path = 'C:\\Users\\roesl\\Programming\\Proseminar\\Elefant.jpg'  # Replace with your large image path
-template_path = 'C:\\Users\\roesl\\Programming\\Proseminar\\Auge.png'  # Replace with your template image path
+image_path = ''  # Replace with your large image path
+template_path = ''  # Replace with your template image path
 
 image = cv2.imread(image_path)
 template = cv2.imread(template_path)
